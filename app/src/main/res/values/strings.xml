@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DailyQoute</string>
+    <string name="webAddress1">http://www.hashanp.xyz</string>
+    <string name="webAddress2">http://cygnus-x.net</string>
+    <string name="webAddress3">http://djxmmx.net</string>
+    <string name="webAddress4">Do You Know Any QOTD Servers?</string>
+    <string name="new_quote_button">Show Me A New Quote</string>
+    <string name="default_quote">In the Times of Universal deceit, telling the truth becomes a revolutionary act. \n\n -George Orwell</string>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wordpress.persiandudeblog.dailyqoute.MainActivity"
+    android:orientation="vertical">
+
+
+
+    <RadioGroup
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+
+
+
+        android:id="@+id/MainActivity_Radio_Group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/webAddress1"
+            android:id="@+id/MainActivity_RadioBtn_1st"
+            android:onClick="onClick"
+            android:checked="true"
+
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/webAddress2"
+            android:id="@+id/MainActivity_RadioBtn_2nd"
+            android:onClick="onClick"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/webAddress3"
+            android:id="@+id/MainActivity_RadioBtn_3rd"
+            android:onClick="onClick"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/webAddress4"
+            android:id="@+id/MainActivity_RadioBtn_4th"
+            android:onClick="onClick"
+            />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/MainActivity_EditText_Website"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MainActivity_Radio_Group"
+        android:enabled="false"
+       />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MainActivity_Button_Show"
+        android:text="@string/new_quote_button"
+        android:layout_below="@+id/MainActivity_EditText_Website"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <TextView
+        android:text="@string/default_quote"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MainActivity_TextView_Quote"
+        android:textAlignment="gravity"
+
+        android:layout_margin="10sp"
+        android:layout_marginTop="5sp"
+        android:layout_below="@+id/MainActivity_Button_Show"
+        />
+</RelativeLayout>
